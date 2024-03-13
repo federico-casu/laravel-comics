@@ -6,7 +6,7 @@
 
         <nav>
             <ul>
-                @foreach ($navLinks as $item)
+                @foreach ($headerNavLinks as $item)
                     <li>
                         <a href="#">{{ $item }}</a>
                     </li>
@@ -16,51 +16,10 @@
     </div>
 </header>
 
-<style>
-    .container {
-        display: flex;
-        justify-content: center;
-        align-items: center;
+{{-- @push('headerSCSS')
 
-        height: 12vh;
-
-        figure {
-            height: 100%;
-            padding: 0.5rem;
-
-            img {
-                height: 100%;
-            }
-        }
-
-        nav {
-            height: 100%;
-
-            ul {
-                display: flex;
-                gap: 1rem;
-                height: 100%;
-                
-                li {
-                    display: flex;
-                    align-items: center;
-
-                    list-style-type: none;
-                    text-transform: uppercase;
-                    height: 100%;
-                    border-bottom: 3px solid transparent;
-
-                    a {
-                        text-decoration: none;
-                        color: #1c1c1c;
-
-                        &:hover {
-                            color: #0082f9;
-                        }
-                    }
-
-                }
-            }
-        }
-    }
-</style>
+    <style>
+        
+    </style>
+    
+@endpush --}}

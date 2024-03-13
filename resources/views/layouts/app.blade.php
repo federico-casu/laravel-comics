@@ -11,8 +11,11 @@
 <body>
     
     @include('partials.header.header')
+    {{-- @stack('headerSCSS') --}}
 
     @yield('content')
+
+    @include('partials.footer.footer')
 
 </body>
 </html>
