@@ -7,7 +7,7 @@
 @section('main')
     <main>
         <figure id="jumbotron">
-            <img src="{{ Vite::asset('resources/img/jumbotron.png')}}" alt="">
+            <img src="{{ Vite::asset('resources/img/jumbotron.jpg')}}" alt="">
         </figure>
 
         <section class="content">
@@ -27,6 +27,19 @@
                 @endforeach
         
                 <span class="load-more">load more</span>
+            </div>
+        </section>
+
+        <section id="categories">
+            <div class="container">
+                @foreach ($categories as $category)
+                    <div>
+                        <figure>
+                            <img src="{{ Vite::asset('resources/img/') . $category['image'] }}" alt="{{ $category['name'] }}">
+                        </figure>
+                        <span>{{ $category['name'] }}</span>
+                    </div>
+                @endforeach
             </div>
         </section>
 
