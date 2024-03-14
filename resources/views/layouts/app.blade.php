@@ -13,7 +13,7 @@
     @include('partials.header.header')
     {{-- @stack('headerSCSS') --}}
 
-    @yield('content')
+    @yield('main')
 
     @include('partials.footer.footer')
 

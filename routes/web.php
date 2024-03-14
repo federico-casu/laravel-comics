@@ -74,6 +74,7 @@ Route::get('/', function () {
             ]
         ]
     ];
+    $comics = config('comics');
 
-    return view('pages.home', compact('headerNavLinks', 'footerNavSections'));
+    return view('pages.home', compact('headerNavLinks', 'footerNavSections', 'comics'));
 });
