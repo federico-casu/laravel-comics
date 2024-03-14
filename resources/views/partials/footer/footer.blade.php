@@ -53,3 +53,20 @@
 
     </div>
 </footer>
+
+<div id="cta">
+    <div class="container">
+        <button>sign-up now!</button>
+
+        <div>
+            <span>follow us</span>
+            <ul>
+                @foreach ($socials as $social)
+                    <li>
+                        <img src="{{ Vite::asset('resources/img/') . $social }}" :alt="social">
+                    </li>
+                @endforeach
+            </ul>
+        </div>
+    </div>
+</div>

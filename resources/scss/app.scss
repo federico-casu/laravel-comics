@@ -255,3 +255,44 @@ footer {
         }
     }
 }
+
+#cta {
+    background-color: $dark-grey_DC;
+    height: 15vh;
+
+    .container {
+        height: 100%;
+        @include d-flex;
+        justify-content: space-between;
+        align-items: center;
+
+        button {
+            @include btn;
+            @include btn-transparent-blue;   
+            
+            cursor: pointer;
+        }
+
+        > div {
+            @include d-flex;
+            align-items: center;
+            gap: 20px;
+    
+            > span {
+                text-transform: uppercase;
+                font-weight: bold;
+                color: $blue_DC;
+            }
+    
+            > ul {
+                @include d-flex;
+                gap: 10px;
+    
+                > li {
+                    list-style-type: none;
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+}

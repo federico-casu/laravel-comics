@@ -97,6 +97,7 @@ Route::get('/', function () {
             'image' => 'buy-dc-power-visa.svg'
         ]
     ];
+    $socials = [ 'footer-facebook.png', 'footer-periscope.png', 'footer-pinterest.png', 'footer-twitter.png', 'footer-youtube.png' ];
 
-    return view('pages.home', compact('headerNavLinks', 'footerNavSections', 'comics', 'categories'));
+    return view('pages.home', compact('headerNavLinks', 'footerNavSections', 'comics', 'categories', 'socials'));
 });
